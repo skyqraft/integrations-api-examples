@@ -49,7 +49,6 @@ npm run scenario -- <scenario-name> [args...]
 Available scenarios:
 
 - `get-assertion-token`
-- `get-access-token`
 - `get-project <project_id>`
 - `get-projects [status_name]`
 - `get-images <project_id>`

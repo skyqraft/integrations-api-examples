@@ -3,10 +3,10 @@
 ```mermaid
 %%{init: {'flowchart': {'nodeSpacing': 55, 'rankSpacing': 75}}}%%
 flowchart TB
-	Client[Client]
+	Client[Client Dev]
 	TenantAdmin[Arkion Tenant Admin]
 	KeyPair[Generate public/private keypair]
-	ClientApp[Customer Client App]
+	ClientApp[Client App]
 	AssertionToken[Create assertion token with private key]
 	ClientApp -->|0.3 Build assertion token| AssertionToken
 	Domain[Domain integrations-gateway.app.arkion.co]
@@ -71,7 +71,7 @@ flowchart TB
 	ClientApp -->|0.5 Lookup available customers| GetCustomers
 	GetCustomers --> CustList
 
-	ClientApp -->|1 Create project with chosen customer_id &#40;optional&#41;| CreateProject
+	ClientApp -->|1 Create project with chosen customer_id optional| CreateProject
 	CreateProject --> Db
 
 	ClientApp -->|2 Create flight| CreateFlight
